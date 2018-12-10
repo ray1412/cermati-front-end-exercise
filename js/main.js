@@ -8,9 +8,9 @@
       const prevDateTime = Date.parse(localStorage.getItem('savedDateTime'));
       const currentDateTime = new Date();
       const difference = currentDateTime - prevDateTime;
+      // difference is milisecs --> divide by 1000 --> secs --> divide by 60 --> minutes
       const minutesDifference = Math.floor(difference/1000/60);
-      console.log(minutesDifference);
-      if(minutesDifference >= defaultTimerInMinutes && !(isNaN(minutesDifference))) document.getElementById("slider-ads").classList.remove('hiddenSlider');
+      if(minutesDifference >= defaultTimerInMinutes || isNaN(minutesDifference)) document.getElementById("slider-ads").classList.remove('hiddenSlider');
     } else {
       document.getElementById("slider-ads").classList.add('hiddenSlider');
     }
@@ -18,7 +18,6 @@
 })();
 
 function closeSticky(e, target){
-  console.log(e, target)
   switch(target){
     case "navbar":
       document.getElementById(target).classList.add('hiddenNavbar');
