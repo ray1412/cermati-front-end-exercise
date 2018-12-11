@@ -22,14 +22,15 @@ body{
   min-height: 42px;
   transition: all ease .375s;
 }
-
 #navbar .text{
   color: #000000;
   margin: 3px 0 5px;
   font-family: roboto-regular;
   font-size: 0.85em;
 }
-
+#navbar .crown-icon{
+  display: none;
+}
 #navbar .form{
   position: relative;
 }
@@ -120,7 +121,7 @@ body{
 }
 .cross {
   position: absolute;
-  top: 5%;
+  top: 5px;
   right: 10px;
   cursor: pointer;
   width: 16px;
@@ -136,10 +137,21 @@ body{
   #navbar{
     flex-direction: row;
   }
+  #navbar .crown-icon{
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  #navbar .crown-icon img{
+    width: 100%;
+  }
   #navbar .text{
     margin: 0 10px;
   }
-  #navbar .form .cross{
+  #navbar .cross{
     display: none;
   }
   #content{
