@@ -3,7 +3,7 @@
   window.onscroll = function() {
     const scrollPos = window.pageYOffset;
     const docHeight = document.body.offsetHeight;
-    const defaultTimerInMinutes = 2;
+    const defaultTimerInMinutes = 10;
     if(scrollPos >= docHeight/2){
       const prevDateTime = Date.parse(localStorage.getItem('savedDateTime'));
       const currentDateTime = new Date();
