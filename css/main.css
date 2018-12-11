@@ -1,3 +1,6 @@
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 .hiddenSlider{
   transform: translate3d(0,100%,0) !important;
 }
@@ -23,6 +26,8 @@
 #navbar .text{
   color: #000000;
   margin: 3px 0 5px;
+  font-family: roboto-regular;
+  font-size: 0.85em;
 }
 
 #navbar .form{
@@ -30,13 +35,14 @@
 }
 #navbar .form input{
   box-sizing: border-box;
-  border: 1px inset #f0f0f0;
+  border: 1px solid #d8d8d8;
   border-radius: 3px;
   height: 30px;
+  padding: 0 8px;
+  max-width: 170px;
+  font-size: 0.8em;
 }
-#navbar .form input::placeholder{
-  padding: 0 5px;
-}
+#navbar .form input::placeholder{}
 #navbar .form button{
   background : #e66853;
   color: #ffffff;
@@ -44,44 +50,84 @@
   border-radius: 3px;
   height: 30px;
   padding: 0 15px;
-  font-size: 0.9em;
+  min-width: 110px;
+  font-size: 0.8em;
   box-sizing: border-box;
   font-weight: 300;
 }
+#content{
+  padding: 4%;
+  text-align: justify;
+  transition: all ease .375s;
+  font-family: cermati-font;
+  line-height: 1.7em;
 
+}
 #slider-ads{
   position: fixed;
   padding: 10px 15px;
   box-sizing: border-box;
   bottom: 0;
   background: #f0f0f0;
-  width: 100%;
+  width: 99%;
   transition: all ease .375s;
   transform: translate3d(0,0,0);
+  border-radius: 3px;
+  box-shadow: 5px -3px 7px 0px rgba(209,209,209,0.7);
 }
 #slider-ads .title{
-
+  font-family: Circular,Helvetica,Arial,sans-serif;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  margin: 15px 0 10px;
+  color: #525252;
 }
 #slider-ads .content{
-
+  line-height: 1.5em;
+  color: #595959;
+  font-size: 0.95em;
+  margin: 15px 0 10px;
 }
 #slider-ads .form{
   position: relative;
 }
 #slider-ads .form input{
-
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8d8d8  !important;
+  height: 32px;
+  margin: 10px 0 5px;
+  padding: 0 8px;
+  font-size: 0.8em;
 }
+#slider-ads .form input::placeholder{}
 #slider-ads .form button{
-
+  width: 100%;
+  text-align: center;
+  background: #0f52bb;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  margin: 5px 0 10px;
+  padding: 15px 0;
+  border: transparent;
+  border-radius: 3px;
 }
-#slide-ads .supported{
-
+#slider-ads .supported{
+  font-size: 0.7em;
+  color: #8d8d8d;
 }
 .cross {
   position: absolute;
   top: 5%;
   right: 10px;
   cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.cross img {
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .hiddenSlider{
@@ -96,7 +142,11 @@
   #navbar .form .cross{
     display: none;
   }
+  #content{
+    padding: 2%;
+  }
   #slider-ads{
     width: 50%;
+    max-width: 420px;
   }
 }

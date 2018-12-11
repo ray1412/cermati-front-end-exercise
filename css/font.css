@@ -1,0 +1,24 @@
+@font-face {
+  font-family: cermati-font;
+  src: url(../fonts/cermati.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: circular-medium;
+  src: url("../fonts/circular-medium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url("../fonts/Roboto-Bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: roboto-medium;
+  src: url("../fonts/Roboto-Medium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url("../fonts/Roboto-Regular.woff2") format('woff2');
+}
