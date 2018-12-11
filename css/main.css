@@ -16,20 +16,37 @@
   flex-direction: column;
   background : #f0f0f0;
   width: 100%;
-  height: 42px;
+  min-height: 42px;
   transition: all ease .375s;
 }
 
 #navbar .text{
   color: #000000;
+  margin: 3px 0 5px;
 }
 
-#navbar form{
+#navbar .form{
   position: relative;
 }
-
-#navbar form button{
-
+#navbar .form input{
+  box-sizing: border-box;
+  border: 1px inset #f0f0f0;
+  border-radius: 3px;
+  height: 30px;
+}
+#navbar .form input::placeholder{
+  padding: 0 5px;
+}
+#navbar .form button{
+  background : #e66853;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 15px;
+  font-size: 0.9em;
+  box-sizing: border-box;
+  font-weight: 300;
 }
 
 #slider-ads{
@@ -72,6 +89,9 @@
   }
   #navbar{
     flex-direction: row;
+  }
+  #navbar .text{
+    margin: 0 10px;
   }
   #navbar .form .cross{
     display: none;
