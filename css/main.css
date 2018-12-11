@@ -140,7 +140,7 @@ body{
   #navbar .crown-icon{
     position: absolute;
     display: block;
-    top: 25%;
+    top: 10px;
     left: 10px;
     width: 24px;
     height: 24px;
