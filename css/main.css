@@ -55,6 +55,7 @@ body{
   font-size: 0.8em;
   box-sizing: border-box;
   font-weight: 300;
+  cursor: pointer;
 }
 #content{
   padding: 4%;
@@ -66,6 +67,7 @@ body{
 }
 #slider-ads{
   position: fixed;
+  min-height: 50vh;
   padding: 10px 15px;
   box-sizing: border-box;
   bottom: 0;
@@ -114,6 +116,7 @@ body{
   padding: 15px 0;
   border: transparent;
   border-radius: 3px;
+  cursor: pointer;
 }
 #slider-ads .supported{
   font-size: 0.7em;
@@ -129,6 +132,12 @@ body{
 }
 .cross img {
   width: 100%;
+}
+@media only screen and (min-width: 576px){
+  #slider-ads{
+    min-height: unset;
+  }
+
 }
 @media only screen and (min-width: 768px) {
   .hiddenSlider{
@@ -159,6 +168,7 @@ body{
   }
   #slider-ads{
     width: 50%;
+    min-height: unset;
     max-width: 420px;
   }
 }
